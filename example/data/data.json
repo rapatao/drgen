@@ -1,0 +1,37 @@
+{
+    "title": "drgen example page",
+    "header": {
+        "name": "drgen example",
+        "address": {
+            "homepage-link-text": "rapatao.com",
+            "homepage-link-url": "http://rapatao.com",
+            "github-link-text": "drgen at GitHub.com",
+            "github-link-url": "https://github.com/rapatao/drgen"
+        }
+    },
+    "detail": {
+        "title": "Usage",
+        "example": [
+            "Import plugin",
+            "<script src=\"drgen.jquery.js\"></script>",
+            " ",
+            "$(document).ready(function () {",
+            "  $.get('data/template.html', function (template) {",
+            "    var component = $('#drg-content').html(template);",
+            "      $.get('data/data.json', function (data) {",
+            "        var config = {",
+            "          'data': data,",
+            "          prefix: 'drg-tpl', /* not required */",
+            "          separator: '-' /* not required */",
+            "        };",
+            "      component.drgen(config);",
+            "    });",
+            "  });",
+            "});"
+        ]
+    },
+    "footer": {
+        "copyright-link-text": "GitHub",
+        "copyright-link-url": "https://github.com/rapatao/drgen"
+    }
+}
